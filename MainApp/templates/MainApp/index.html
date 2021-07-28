@@ -1,0 +1,19 @@
+{% extends 'MainApp/base.html' %}
+
+
+{% block title %}
+{{ height }}
+{% endblock %}
+
+
+{% block content %}
+{% for el in page_obj %}
+<div class="alert alert-warning mt-2">
+    <h3>Высота блока: {{ el.height }}</h3>
+    <p>Хэш блока: {{ el.hash }}</p>
+    <p>Время блока: {{ el.timestamp }}</p>
+    <p>Адрес майнера: {{ el.miner }}</p>
+    <p>Количество транзакций: {{ el.transactionCount }}</p>
+</div>
+{% endfor %}
+{% endblock %}

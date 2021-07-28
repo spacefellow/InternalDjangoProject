@@ -1,0 +1,17 @@
+{% extends 'MainApp/base.html' %}
+
+
+{% block title %}
+{{ height }}
+{% endblock %}
+
+
+{% block content %}
+<div class="alert alert-warning mt-2">
+    <h4>Высота блока: {{ blockes.height }}</h4>
+    <p>Хэш блока: {{ blockes.hash }}</p>
+    <p>Время блока: {{ blockes.timestamp }}</p>
+    <p>Адрес майнера: {{ blockes.miner }}</p>
+    <p>Транзакции: {{ blockes.transactionCount }}</p>
+</div>
+{% endblock %}
