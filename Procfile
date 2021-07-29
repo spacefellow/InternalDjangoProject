@@ -1,1 +1,1 @@
-web: pipenv run python src/manage.py runserver $PORT
+web: gunicorn InternApp.wsgi --log-file -
