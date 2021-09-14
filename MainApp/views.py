@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 import requests
 from .models import BlockInfo
 from django.core.paginator import Paginator
-from django.views.generic import DetailView
 
 
 def index(request):
@@ -30,12 +29,6 @@ def index(request):
             'page_number': int(page_number)
         }
     )
-
-
-# class BlockDetailView(DetailView):
-#     model = BlockInfo
-#     template_name = 'MainApp/details_view.html'
-#     context_object_name = 'blockes'
 
 
 def detail(request, block_slug):
