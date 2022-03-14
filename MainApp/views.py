@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 
 
 def index(request):
-    url = 'https://bcschain.info/api/blocks'
+    url = 'https://blockchain.info/api/blocks'
     res = requests.get(url).json()
     BlockInfo.objects.all().delete()
     for el in res:
