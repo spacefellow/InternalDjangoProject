@@ -1,4 +1,4 @@
-## HHParseBot
+## InternalDjangoProject
 A simple web application that displays crypto transaction data. It stores and serves data using Django and PostgreSQL.
 
 ### Set Up the app in Windows
