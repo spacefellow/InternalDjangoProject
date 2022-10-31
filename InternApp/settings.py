@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-a1q5&*sa^b0)c@j5rhf=e%=%4y#wlket6pimz&*)t28y@5jjrb'
+SECRET_KEY = 'your secret key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,11 +75,11 @@ WSGI_APPLICATION = 'InternApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'BlockChainSol',
-        'USER': 'KIRILL',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': 'database name',
+        'USER': 'username',
+        'PASSWORD': 'password',
+        'HOST': 'host',
+        'PORT': 'port',
     }
 }
 
